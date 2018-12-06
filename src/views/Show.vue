@@ -2,7 +2,7 @@
   <div class="home">
     <div class="container">
       <img v-bind:src="outfit.image" class="img-fluid" alt="Responsive image" />
-      <p>{{ outfit.name }}</p>
+      <h3>{{ outfit.name }}</h3>
       <p>{{ outfit.description }}</p>
       <div v-for="product in outfit.products">
         <h4>{{ product.name }}</h4>
@@ -10,6 +10,13 @@
           <img v-bind:src="product.image" width="200" height="200" alt="..." class="img-thumbnail" />
         </a>
         <p>{{ product.price }}</p>
+      </div>
+      <div v-for="recommendation in outfit.recommendations">
+        <h5>Recommendations</h5>
+        <a v-bind:href="recommendation.recommendation_url">
+          <img v-bind:src="recommendation.image" width="200" height="200" alt="..." class="img-thumbnail" />
+        </a>
+        <p>user {{ recommendation.user_id }} : {{ recommendation.comment }}</p>
       </div>
     </div>
   </div>

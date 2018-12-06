@@ -31,7 +31,7 @@ export default {
     };
   },
   created: function() {
-    axios.get("http://localhost:3000/api/outfits/male").then(response => {
+    axios.get("http://localhost:3000/api/womens").then(response => {
       this.outfits = response.data;
     });
   },
