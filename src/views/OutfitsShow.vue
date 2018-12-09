@@ -12,12 +12,18 @@
         <p>{{ product.price }}</p>
       </div>
       <div v-for="recommendation in outfit.recommendations">
-        <h5>Recommendations</h5>
+        <h2>Recommendations</h2>
         <a v-bind:href="recommendation.recommendation_url">
           <img v-bind:src="recommendation.image" width="200" height="200" alt="..." class="img-thumbnail" />
         </a>
         <p>user {{ recommendation.user_id }} : {{ recommendation.comment }}</p>
       </div>
+      <h5>Add New Recommendation</h5>
+      <p>Image: <input v-model="newRecommendationImage" type="text" /></p>
+      <p>Url: <input v-model="newRecommendation" type="text" /></p>
+      <p>comments:</p>
+      <textarea v-model="newRecommnedationComments" type="text" cols="40" />
+      <p><button v-on:click="createRecommendation();" class="btn btn-primary">Post Recommendation</button></p>
     </div>
   </div>
 </template>
