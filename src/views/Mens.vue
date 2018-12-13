@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <div class="container">
-      <input type="text" v-model="searchFilter" />
-      <div class="row">
+      <div class="products-grid">
         <div v-for="outfit in outfits" class="col-md-4 mb-2">
           <div class="card">
             <img class="card-img-top" v-bind:src="outfit.image" alt="Card image cap" />

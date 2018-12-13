@@ -8,6 +8,7 @@ import Womens from "./views/Womens.vue";
 import Mens from "./views/Mens.vue";
 import Recommendation from "./views/Recommendation.vue";
 import OutfitsNew from "./views/OutfitsNew.vue";
+import Test from "./views/Test.vue";
 
 Vue.use(Router);
 
@@ -18,6 +19,7 @@ export default new Router({
       name: "home",
       component: Home
     },
+    { path: "/test", name: "test", component: Test },
     { path: "/outfits/new", name: "outfits-new", component: OutfitsNew },
     { path: "/outfits/:id", name: "outfits-show", component: OutfitsShow },
     { path: "/signup", name: "signup", component: Signup },

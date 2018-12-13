@@ -5,7 +5,7 @@
       <h3>{{ outfit.name }}</h3>
       <p>{{ outfit.description }}</p>
       <div v-for="product in outfit.products">
-        <h4>{{ product.name }}</h4>
+        <h5>{{ product.name }}</h5>
         <a v-bind:href="product.product_url">
           <img v-bind:src="product.image" width="200" height="200" alt="..." class="img-thumbnail" />
         </a>
@@ -20,7 +20,7 @@
       </div>
       <h5>Add New Recommendation</h5>
       <p>Image: <input v-model="newRecommendationImage" type="text" /></p>
-      <p>Url: <input v-model="newRecommendation" type="text" /></p>
+      <p>Url: <input v-model="newRecommendationUrl" type="text" /></p>
       <p>comments:</p>
       <textarea v-model="newRecommnedationComments" type="text" cols="40" />
       <p><button v-on:click="createRecommendation();" class="btn btn-primary">Post Recommendation</button></p>
