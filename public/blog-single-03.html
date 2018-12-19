@@ -1,0 +1,363 @@
+
+
+
+
+    <!-- Post -->
+    <section class="clearfix zi-1 relative fullwidth o-hidden">
+        <!-- Row -->
+        <div class="row xxs-px-mobile clearfix calculate-height">
+
+            <!-- Left Post Details -->
+            <div class="col-lg-6 offset-lg-2 col-12 py sm-pr xxs-px-mobile bg-cover bg-center bg-soft bg-soft-white6 height-auto-mobile" data-background="images/backgrounds/background_22.jpg">
+                <!-- Text Block -->
+                <div class="container gray7 zi-4">
+
+                    <!-- Slider -->
+                    <div class="custom-slider container no-px block-img qdr-controls c-move sm-mt border-5 border-gray" data-slick='{"arrows":true, "fade": true, "draggable":true, "slidesToShow": 1, "slidesToScroll": 1, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 1}},{"breakpoint": 600,"settings":{"slidesToShow": 1}}]}'>
+                        <img v-bind:src="outfit.image" class="center" alt="Responsive image" />
+                    </div>
+                    <!-- End Slider -->
+                    <h3 class="bold-subtitle dark sm-mt">
+                        There are many variations of passages of <span class="playfair italic underline-dashed text-warning">Lorem Ipsum available,</span>  but in some form by injected humour, or randomised words <span class="playfair italic underline-dashed">which don't look even</span> slightly believable.
+                    </h3>
+                    <p class="xs-mt">
+                        {{ outfit.description }}
+                    </p>
+                </div>
+                <!-- End Text Block -->
+                  <div id="lightboxes" class="container mt t-center mb">
+                      <div class="qdr-col-3 gap-3 lightbox_gallery">
+                        <div>
+                            <a v-for="product in outfit.products" v-bind:href="product.product_url" class="thumbnail-img block-img" data-iframe="true"> 
+                                <img v-bind:src="product.image" alt="">
+                                <div class="img-overlay">
+                                  <div class="overlay-wrap">
+                                      <i class="fa fa-expand font-20"></i>
+                                  </div>
+                                </div>
+                            </a>
+                        </div>
+                      </div>
+                </div>               
+
+                <!-- Sender -->
+                <div class="container-sm block-img clearfix bt-1 border-gray2 sm-pt sm-mt">
+
+                    <!-- Row for cols -->
+                    <div class="row">
+
+                        <!-- Sender Img -->
+                        <div class="col-1 hidden-sm no-pm">
+                            <img src="images/clients/avatar_06.jpg" alt="user avatar" class="circle">
+                        </div>
+                        <!-- Texts -->
+                        <div class="col-11">
+                            <h4 class="bold-subtitle dark">Abby Evans</h4>
+                            <p class="xxs-my gray7">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth the master rationally encounter consequences that are extremely painful
+                            </p>
+                            <a href="#" class="md-btn border-btn border-gray4 font-10 bold uppercase bg-colored-hover white-hover slow qdr-hover-4 bs-light-hover radius-lg">
+                                All Author Posts
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Row for cols -->
+                </div>
+                <!-- End Sender -->
+
+            </div>
+            <!-- End Left Post Details -->
+
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-12 clearfix bg-gray bl-1 border-gray1 bs-xl py height-auto-mobile">
+                <aside class="sidemenu font-14 col-md-6">
+                    <!-- Widget -->
+                    <div class="widget">
+                        <h5 class="widget-title bold-subtitle">Categories</h5>
+                        <ul class="nav-list bold-subtitle">
+                            <li><a href="#">Design (11)</a></li>
+                            <li><a href="#">Video (12)</a></li>
+                            <li><a href="#">Photography (32)</a></li>
+                            <li><a href="#">Web Design (7)</a></li>
+                            <li><a href="#">Videography (16)</a></li>
+                            <li><a href="#">Lifestyle (26)</a></li>
+                            <li><a href="#">Technologhy (14)</a></li>
+                            <li><a href="#">Mockups (9)</a></li>
+                            <li><a href="#">Traveling (18)</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Widget -->
+
+                    <!-- Widget -->
+                    <div class="widget">
+                        <h5 class="widget-title bold-subtitle">Posts</h5>
+                        <!-- Posts -->
+                        <div class="widget-posts">
+                            <!-- Post -->
+                            <a href="#" class="widget-post clearfix bg-gray2-hover radius">
+                                <div class="widget-image opacity-hover slow">
+                                    <div class="thumbnail-img circle"><img src="images/thumbnails/thumb_08.jpg" alt=""></div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="underline-hover bold-subtitle xxs-mt">Lorem ipsum dolor</h5>
+                                    <p class="date underline-hover">July 20, 2018</p>
+                                </div>
+                            </a>
+                            <!-- Post -->
+                            <a href="#" class="widget-post clearfix bg-gray2-hover radius">
+                                <div class="widget-image opacity-hover slow">
+                                    <div class="thumbnail-img circle"><img src="images/thumbnails/thumb_09.jpg" alt=""></div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="underline-hover bold-subtitle xxs-mt">Lorem ipsum dolor</h5>
+                                    <p class="date underline-hover">July 20, 2018</p>
+                                </div>
+                            </a>
+                            <!-- Post -->
+                            <a href="#" class="widget-post clearfix bg-gray2-hover radius">
+                                <div class="widget-image opacity-hover slow">
+                                    <div class="thumbnail-img circle"><img src="images/thumbnails/thumb_10.jpg" alt=""></div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="underline-hover bold-subtitle xxs-mt">Lorem ipsum dolor</h5>
+                                    <p class="date underline-hover">July 20, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Widget -->
+
+                    <!-- Widget -->
+                    <div class="widget">
+                        <h5 class="widget-title bold-subtitle">Text Widget</h5>
+                        <div class="lh-normal gray7">
+                            <div class="image-left thumbnail-img"><img src="images/thumbnails/thumb_06.jpg" alt="Text Widget Image"> </div>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus quisand blanditiis praem voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
+                        </div>
+                    </div>
+                    <!-- End Widget -->
+
+                    <!-- Widget -->
+                    <div class="widget">
+                        <h5 class="widget-title bold-subtitle">Tags</h5>
+                        <div class="tags extrabold uppercase font-10">
+                            <a href="#">Video</a>
+                            <a href="#">Photograpy</a>
+                            <a href="#">Design</a>
+                            <a href="#">Wordpress</a>
+                            <a href="#">CSS</a>
+                            <a href="#">Tech</a>
+                            <a href="#">Traveling</a>
+                            <a href="#">Videography</a>
+                            <a href="#">Tickets</a>
+                            <a href="#">Magazine</a>
+                        </div>
+
+                    </div>
+                    <!-- End Widget -->
+                </aside>
+            </div>
+            <!-- End Sidebar -->
+
+
+        </div>
+        <!-- End Row -->
+    </section>
+    <!-- End Post -->
+
+
+
+
+    <!-- Recent Posts -->
+    <section class="py bg-gray2 border-1 border-gray2">
+
+
+        <!-- Divider -->
+        <div class="divider-1 font-11 uppercase container gray7 extrabold xs-mb">
+            <span>Recent Posts</span>
+        </div>
+
+        <!-- Slider -->
+        <div class="custom-slider container block-img circle-dots dark-dots c-grab gray7" data-slick='{"dots": true, "fade": false, "draggable":true, "slidesToShow": 4, "slidesToScroll": 2}'>
+
+            <!-- Post -->
+            <div class="xxs-px sm-py">
+                <a href="blog-single-01.html" class="relative">
+                    <!-- Mark -->
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">art</div>
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">music</div>
+                    <!-- Image -->
+                    <div class="block-img o-hidden"><img src="images/gallery/gallery_01.jpg" alt="" class="scale-hover"></div>
+                    <div class="xs-px xs-py bg-white bs-light">
+                        <!-- Sender, Tag, comments -->
+                        <p class="font-11">
+                           April 14, 2018
+                        </p>
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark mini-mt">Beautiful Ferakles.</h4>
+                        <!-- Post Message -->
+                        <p class="mini-mt">
+                            It is a long established fact that a reader.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- End Post -->
+            <!-- Post -->
+            <div class="xxs-px sm-py">
+                <a href="blog-single-02.html" class="relative">
+                    <!-- Mark -->
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">art</div>
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">music</div>
+                    <!-- Image -->
+                    <div class="block-img o-hidden"><img src="images/gallery/gallery_02.jpg" alt="" class="scale-hover"></div>
+                    <div class="xs-px xs-py bg-white bs-light">
+                        <!-- Sender, Tag, comments -->
+                        <p class="font-11">
+                           April 14, 2018
+                        </p>
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark mini-mt">Black and gold.</h4>
+                        <!-- Post Message -->
+                        <p class="mini-mt">
+                            It is a long established fact that a reader.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- End Post -->
+            <!-- Post -->
+            <div class="xxs-px sm-py">
+                <a href="blog-single-03.html" class="relative">
+                    <!-- Mark -->
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">art</div>
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">music</div>
+                    <!-- Image -->
+                    <div class="block-img o-hidden"><img src="images/gallery/gallery_03.jpg" alt="" class="scale-hover"></div>
+                    <div class="xs-px xs-py bg-white bs-light">
+                        <!-- Sender, Tag, comments -->
+                        <p class="font-11">
+                           April 14, 2018
+                        </p>
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark mini-mt">Gold Fashion.</h4>
+                        <!-- Post Message -->
+                        <p class="mini-mt">
+                            It is a long established fact that a reader.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- End Post -->
+            <!-- Post -->
+            <div class="xxs-px sm-py">
+                <a href="blog-single-04.html" class="relative">
+                    <!-- Mark -->
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">art</div>
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">music</div>
+                    <!-- Image -->
+                    <div class="block-img o-hidden"><img src="images/gallery/gallery_04.jpg" alt="" class="scale-hover"></div>
+                    <div class="xs-px xs-py bg-white bs-light">
+                        <!-- Sender, Tag, comments -->
+                        <p class="font-11">
+                           April 14, 2018
+                        </p>
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark mini-mt">Black N White.</h4>
+                        <!-- Post Message -->
+                        <p class="mini-mt">
+                            It is a long established fact that a reader.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- End Post -->
+            <!-- Post -->
+            <div class="xxs-px sm-py">
+                <a href="blog-single-01.html" class="relative">
+                    <!-- Mark -->
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">art</div>
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">music</div>
+                    <!-- Image -->
+                    <div class="block-img o-hidden"><img src="images/gallery/gallery_05.jpg" alt="" class="scale-hover"></div>
+                    <div class="xs-px xs-py bg-white bs-light">
+                        <!-- Sender, Tag, comments -->
+                        <p class="font-11">
+                           April 14, 2018
+                        </p>
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark mini-mt">Wall design.</h4>
+                        <!-- Post Message -->
+                        <p class="mini-mt">
+                            It is a long established fact that a reader.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- End Post -->
+            <!-- Post -->
+            <div class="xxs-px sm-py">
+                <a href="blog-single-01.html" class="relative">
+                    <!-- Mark -->
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">art</div>
+                    <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">music</div>
+                    <!-- Image -->
+                    <div class="block-img o-hidden"><img src="images/gallery/gallery_06.jpg" alt="" class="scale-hover"></div>
+                    <div class="xs-px xs-py bg-white bs-light">
+                        <!-- Sender, Tag, comments -->
+                        <p class="font-11">
+                           April 14, 2018
+                        </p>
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark mini-mt">Short Hair Fashion.</h4>
+                        <!-- Post Message -->
+                        <p class="mini-mt">
+                            It is a long established fact that a reader.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- End Post -->
+        </div>
+    </section>
+    <!-- End Recent Posts -->
+    <div class="divider-1 container sm-mt xs-mb">
+      <span class="h3 merriweather italic light colored1">Recommendations</span>
+    </div>
+    <!-- Comment Form -->
+    <section class="py  bg-gray border-1 border-gray2">
+
+        <!-- Container for form -->
+        <div class="container-sm">
+            <!-- Form -->
+            <div id="form" class="t-center gray7">
+                <!-- Contact Form -->
+                <form id="contact_form" name="contact_form" method="post" action="php/mail.php">
+                    
+                    <!-- Half Inputs -->
+                    <div class="half clearfix">
+                        <!-- Name -->
+                        <input type="text" name="name" id="name" required placeholder="Name" class="classic_form big radius-lg bg-gray2 bs-light-focus">
+                        <!-- Email -->
+                        <input type="text" name="image" id="image" required placeholder="image" class="classic_form big radius-lg bg-gray2 bs-light-focus">
+                    </div>
+                    <!-- Subject -->
+                    <input type="text" name="website" id="website" required placeholder="website" class="classic_form big radius-lg bg-gray2 bs-light-focus">
+                    <!-- Message -->
+                    <textarea name="message" id="message" placeholder="Message" class="classic_form large radius bg-gray2 bs-light-focus"></textarea>
+                    <!-- Send Button -->
+                    <button type="submit" id="submit" class="bg-colored1 xl-btn font-12 long-btn xxs-mt slow width-auto click-effect white bold qdr-hover-6 radius-lg">SEND MESSAGE</button>
+                </form>
+                <!-- End Form -->
+            </div>
+            <!-- End #form div -->
+        </div>
+
+    </section>
+    <!-- End Comment Form -->
+
+
+
+
+

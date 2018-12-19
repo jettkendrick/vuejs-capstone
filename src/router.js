@@ -8,8 +8,7 @@ import Womens from "./views/Womens.vue";
 import Mens from "./views/Mens.vue";
 import Recommendation from "./views/Recommendation.vue";
 import OutfitsNew from "./views/OutfitsNew.vue";
-import Test from "./views/Test.vue";
-
+import Tumblr from "./views/Tumblr.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -19,11 +18,11 @@ export default new Router({
       name: "home",
       component: Home
     },
-    { path: "/test", name: "test", component: Test },
     { path: "/outfits/new", name: "outfits-new", component: OutfitsNew },
     { path: "/outfits/:id", name: "outfits-show", component: OutfitsShow },
     { path: "/signup", name: "signup", component: Signup },
     { path: "/login", name: "login", component: Login },
+    { path: "/tumblr", name: "tumblr", component: Tumblr },
     { path: "/womens", name: "womens", component: Womens },
     { path: "/men", name: "men", component: Mens },
     { path: "/recommendations", name: "recommendations", component: Recommendation }

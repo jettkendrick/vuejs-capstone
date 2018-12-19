@@ -1,0 +1,96 @@
+
+
+    <!-- Section for justified Portfolio -->
+    <section>
+        
+        <!-- Start Portfolio -->
+        <div id="portfolio" class="lightbox_gallery">
+            <!-- Items -->
+            <a href="images/gallery/mosaic_01_b.jpg">
+                <img alt="Clean, Beautiful, Creative" src="images/gallery/mosaic_01.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_15_b.jpg">
+                <img alt="Colors Of Quadra" src="images/gallery/mosaic_15.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_03_b.jpg">
+                <img alt="The Best Colors With Beauty" src="images/gallery/mosaic_03.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_04_b.jpg">
+                <img alt="Make Your Choice" src="images/gallery/mosaic_04.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_05_b.jpg">
+                <img alt="Black and Gold Harmony" src="images/gallery/mosaic_05.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_06_b.jpg">
+                <img alt="Orange and yellow harmony" src="images/gallery/mosaic_06.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_07_b.jpg">
+                <img alt="Colors of nature" src="images/gallery/mosaic_07.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_08_b.jpg">
+                <img alt="Bright or darkness" src="images/gallery/mosaic_08.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_09_b.jpg">
+                <img alt="The tones of darkness" src="images/gallery/mosaic_09.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_10_b.jpg">
+                <img alt="The best colors" src="images/gallery/mosaic_10.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_11_b.jpg">
+                <img alt="Life itself. Design." src="images/gallery/mosaic_11.jpg"/>
+            </a>
+            <a href="images/gallery/mosaic_12_b.jpg">
+                <img alt="Music everywhere." src="images/gallery/mosaic_12.jpg"/>
+            </a>
+        </div>
+        <!-- End Portfolio -->
+
+    </section>
+    <!-- End Section for justified Portfolio -->
+
+
+
+
+    <script type="text/javascript">
+        //Options for Justified Gallery
+        $("#portfolio").justifiedGallery({
+            thumbnailPath: undefined, /* If defined, sizeRangeSuffixes is not used, and this function is used to determine the
+            path relative to a specific thumbnail size. The function should accept respectively three arguments:
+            current path, width and height */
+            rowHeight: 400,
+            maxRowHeight: false, // false or negative value to deactivate. Positive number to express the value in pixels,
+                                 // A string '[0-9]+%' to express in percentage (e.g. 300% means that the row height
+                                 // can't exceed 3 * rowHeight)
+            margins: 10,
+            border: -1, // negative value = same as margins, 0 = disabled, any other value to set the border
+
+            lastRow: 'nojustify', // … which is the same as 'left', or can be 'justify', 'center', 'right' or 'hide'
+
+            justifyThreshold: 0.90, /* if row width / available space > 0.90 it will be always justified
+                                     * (i.e. lastRow setting is not considered) */
+            waitThumbnailsLoad: true,
+            captions: true,
+            cssAnimation: true,
+            imagesAnimationDuration: 500, // ignored with css animations
+            captionSettings: { // ignored with css animations
+                animationDuration: 100,
+                visibleOpacity: 1,
+                nonVisibleOpacity: 0.0
+            },
+            rel: null, // rewrite the rel of each analyzed links
+            target: null, // rewrite the target of all links
+            extension: /\.[^.\\/]+$/, // regexp to capture the extension of an image
+            refreshTime: 200, // time interval (in ms) to check if the page changes its width
+            refreshSensitivity: 0, // change in width allowed (in px) without re-building the gallery
+            randomize: false,
+            sort: false, /*
+              - false: to do not sort
+              - function: to sort them using the function as comparator (see Array.prototype.sort())
+            */
+            filter: false
+        });
+    </script>
+
+</body>
+<!-- Body End -->
+</html>

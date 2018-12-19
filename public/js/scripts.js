@@ -1,3 +1,5 @@
+function setupTheme() {
+    
 // When Window Loaded.
 $(window).on('load', function() {
 
@@ -1568,3 +1570,4 @@ $(window).on('load', function() {
 
             });
          }
+}

@@ -1,10 +1,12 @@
 <template>
-  <div class="home">
+  <section id="home" class="fullscreen t-center fullwidth cover" data-background="images/backgrounds/bg-09.jpg">
     <a href="/#/men" class="btn btn-primary">men</a> <a href="/#/womens" class="btn btn-primary">women</a>
-  </div>
+  </section>
 </template>
 
-<style></style>
+<style>
+  
+</style>
 
 <script>
 export default {

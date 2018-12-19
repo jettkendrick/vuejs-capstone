@@ -1,29 +1,45 @@
 <template>
   <div class="home">
-    <div class="container">
-      <h1>Add New Outfit</h1>
-      <p>name: <input v-model="newOutfitName" type="text" /></p>
-      <p>Image URL: <input v-model="newOutfitImage" type="text" /></p>
-      <p>Celebrity: <input v-model="newOutfitCelebrity" type="text" /></p>
-      Gender: <br />
-      <input v-model="newOutfitGender" type="radio" name="genders" value="Male" /> Male
-      <input v-model="newOutfitGender" type="radio" name="genders" value="Female" /> Female
-      <p>Description:</p>
-      <textarea v-model="newOutfitDescription" type="text" cols="40" rows="5" />
-      <h5>Add Outfit Products</h5>
-      <div v-for="newProduct in newProducts">
-        <p>name: <input v-model="newProduct.name" type="text" /></p>
-        <p>Image URL: <input v-model="newProduct.image" type="text" /></p>
-        <p>Product URL: <input v-model="newProduct.product_url" type="text" /></p>
-        <p>Price: <input v-model="newProduct.price" type="text" /></p>
+    <div class="container gap-10">
+      <section id="headings" class="py container t-center">
+      <h2 class="merriweather italic light colored1 bold">Create New Outfit</h2>
+      <div class="title-strips xxs-mt dark"></div>
+      </section>
+      <p> <input v-model="newOutfitName" type="text" name="name" id="name" required placeholder="Name" class="classic_form big radius-lg bg-gray2 bs-light-focus"/></p>
+      <p><input v-model="newOutfitImage" type="text" name="Image_URL" id="Image_URL" required placeholder="Image URL" class="classic_form big radius-lg bg-gray2 bs-light-focus" /></p>
+        <div class="col-md-6 col-sm-12">
+        <input type="file" name="file10" id="file10" class="inputfile" data-multiple-caption="{count} Images Selected" accept="image/x-png,image/gif,image/jpeg" multiple />
+        <label for="file10" class="radius-lg"> <strong class="bg-colored">Choose a file&hellip;</strong><span></span></label>
+        </div>
+      <p> <input v-model="newOutfitCelebrity" type="text" name="celebrity" id="celebrity" required placeholder="Celebrity" class="classic_form big radius-lg bg-gray2 bs-light-focus" /> </p>
+      <div class="classic_checkbox radio">
+        <input v-model="newOutfitGender" type="radio" name="genders" id="radioOne" value="Male" checked> <label for="radioOne">Male</label>
       </div>
-      <p><button v-on:click="addEmptyProduct();" class="btn btn-primary">Add More Products</button></p>
-      <button v-on:click="createOutfit();" class="btn btn-primary">Create</button>
+      <div class="classic_checkbox radio">
+        <input v-model="newOutfitGender" type="radio" name="genders" id="radioTwo" value="Female" checked> <label for="radioTwo">Female</label>
+      </div>
+      <textarea v-model="newOutfitDescription" name="description" id="description" placeholder="Description" class="classic_form large radius bg-gray2 bs-light-focus"></textarea>
+        <div class="divider-1 container sm-mt xs-mb">
+          <span class="h3 merriweather italic light colored1">Add Products</span>
+        </div>
+      <div v-for="newProduct in newProducts">
+        <p> <input v-model="newProduct.name" type="text" name="name" id="name" required placeholder="Name" class="classic_form big radius-lg bg-gray2 bs-light-focus"/></p>
+        <p><input v-model="newProduct.image" type="text" name="Image_URL" id="Image_URL" required placeholder="Image URL" class="classic_form big radius-lg bg-gray2 bs-light-focus" /></p>
+        <div class="col-md-6 col-sm-12">
+        <input type="file" name="file10" id="file10" class="inputfile" data-multiple-caption="{count} Images Selected" accept="image/x-png,image/gif,image/jpeg" multiple />
+        <label for="file10" class="radius-lg"> <strong class="bg-colored">Choose a file&hellip;</strong><span></span></label>
+        </div>
+        <p> <input v-model="newProduct.product_url" type="text" name="Product_URL" id="Product_URL" required placeholder="Product URL" class="classic_form big radius-lg bg-gray2 bs-light-focus"/></p>
+        <p> <input v-model="newProduct.price" type="integer" name="price" id="price" required placeholder="price" class="classic_form big radius-lg bg-gray2 bs-light-focus"/> </p>
+      </div>
+      <p><button v-on:click="addEmptyProduct();"  class="stay lg-btn bg-gradient white qdr-hover-2-rotate radius-lg">Add More Products</button></p>
+      <p><button v-on:click="createOutfit();"  class="stay lg-btn bg-gradient white qdr-hover-2-rotate radius-lg">Create</button></p>
     </div>
   </div>
 </template>
 
-<style></style>
+<style>
+</style>
 
 <script>
 var axios = require("axios");

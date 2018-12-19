@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-
+  <div id="app" >
+    
 
     <!-- LOADER -->
     <div class="page-loader bg-white">
@@ -15,51 +15,41 @@
     </div>
 
     <!-- PAGETOP -->
-    <div id="pagetop">
-        <div class="container">
-            <!-- Left texts -->
-            <div class="left font-12">
-                <a href="tel:000000" class="colored-hover">+01 234 567 890</a>
-                <a href="mailto:support@goldeyestheme.com" class="colored-hover" data-toggle="tooltip" data-placement="bottom" title="Send us an e-mail">info@goldeyestheme.com</a>
-            </div>
-            <!-- Right, socials -->
-            <div class="right clearfix">
-                <a href="#" target="_blank" class="fa fa-twitter twitter"></a>
-                <a href="#" target="_blank" class="fa fa-pinterest pinterest"></a>
-                <a href="#" target="_blank" class="fa fa-instagram instagram"></a>
-                <a href="#" target="_blank" class="fa fa-envelope mail"></a>
-                <a href="#" target="_blank" class="fa fa-facebook facebook"></a>
-            </div>
-        </div>
-    </div>
+
     <!--END PAGETOP -->
+    <section id="dotted-navigation" class="hide-on-home nav-menu">
+        <ul id="side-dotted-navigation" class="nav spy font-11 bold uppercase">
+            <li><a href="/#/men"><span>Men</span></a></li>
+            <li><a href="/#/womens"><span>Womem</span></a></li>
+            <li><a href="/#/outfits/new"class="bg-colored2"><span>Create</span></a></li>
+        </ul>
+    </section>
 
 
 
-  <nav id="navigation" class="dark-nav logo-centered static shrink modern hover4 border dotted radius-drop" data-offset="70">
+  <nav id="navigation" class="white-nav logo-centered transparent shrink modern hover4 border dotted start-dark" data-offset="70">
     <div class="columns clearfix container">
         <div class="nav-menu f-left">
             <ul class="nav clearfix font-12 bold uppercase">
-              <li><a href="index.html">Mens</a></li>
-               <li><a href="index.html">Womens</a></li>
-               <li><a href="index.html">stuff</a></li>
-               <li><a href="index.html">stuff</a></li>
+              <li><a href="/#/men">Men</a></li>
+               <li><a href="/#/womens">Women</a></li>
+               <li><a href="/#/tumblr">Browse</a></li>
+               <li><a href="/#/outfits/new">Create</a></li>
             </ul>
-        </div>
-        <div class="logo">
-            <a href="#pagetop">
-                <img src="https://ih1.redbubble.net/image.478115041.1589/raf,360x360,075,t,fafafa:ca443f4786.jpg" data-second-logo="https://ih1.redbubble.net/image.478115041.1589/raf,360x360,075,t,fafafa:ca443f4786.jpg" class="m-auto" alt="Quadra Logo">
-            </a>
         </div>
         <div class="nav-menu f-right">
             <ul class="nav clearfix font-12 bold uppercase">
-              <li><a href="index.html">Signup</a></li>
-              <li><a href="index.html">Login</a></li>
+              <li><a href="/#/signup">Signup</a></li>
+              <li><a href="/#/login">Login</a></li>
               <li><a href="#" class="search-form-trigger"><i class="fa fa-search"></i></a></li>
             </ul>
         </div>
     </div>
   </nav>
+
+
+
+
 
 
 <router-view />
@@ -82,7 +72,7 @@
                     <h6 class="xxs-mt bold gray8">STALK US</h6>
                     <p class="mini-mt">
                         <a href="https://www.instagram.com/gldeyes/" target="_blank" class="mini-mt underline-hover gray6-hover">
-                            You can get Quadra news from our instagram profile: @gldeyes
+                           
                         </a>
                     </p>
                 </div>
@@ -137,4 +127,14 @@
 
 </template>
 
-<style></style>
+<style>
+
+</style>
+
+<script>
+export default {
+    mounted: function() {
+        setupTheme();
+    }
+}
+</script>
