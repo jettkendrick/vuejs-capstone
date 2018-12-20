@@ -37,6 +37,11 @@
                <li><a href="/#/outfits/new">Create</a></li>
             </ul>
         </div>
+        <div class="logo">
+            <a href="/#/">
+                <img src="images/logos/logocat.png" data-second-logo="images/logos/logocat.png" class="m-auto" alt="Quadra Logo">
+            </a>
+        </div>
         <div class="nav-menu f-right">
             <ul class="nav clearfix font-12 bold uppercase">
               <li><a href="/#/signup">Signup</a></li>

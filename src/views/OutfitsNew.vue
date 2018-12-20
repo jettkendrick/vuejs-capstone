@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <div class="container gap-10">
       <section id="headings" class="py container t-center">
       <h2 class="merriweather italic light colored1 bold">Create New Outfit</h2>
       <div class="title-strips xxs-mt dark"></div>
       </section>
+    <div class="container gap-10">
       <p> <input v-model="newOutfitName" type="text" name="name" id="name" required placeholder="Name" class="classic_form big radius-lg bg-gray2 bs-light-focus"/></p>
       <p><input v-model="newOutfitImage" type="text" name="Image_URL" id="Image_URL" required placeholder="Image URL" class="classic_form big radius-lg bg-gray2 bs-light-focus" /></p>
         <div class="col-md-6 col-sm-12">

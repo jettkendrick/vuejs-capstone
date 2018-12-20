@@ -15,7 +15,7 @@
     </div>
   </div> -->
 
-      <section id="home" class="fullscreen t-center fullwidth cover" data-background="images/backgrounds/lion.jpg">
+      <section id="home" class="fullscreen t-center fullwidth cover" data-background="images/backgrounds/bg-09.jpg">
         <!-- Container -->
         <div class="container-xs mxw-350 v-center">
            <div class="t-center white">
@@ -25,13 +25,12 @@
                </h4>
                <div class="form dark xs-mt normal-title">
       <form v-on:submit.prevent="submit();">
-        <h1>Login</h1>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
-        <div class="form-group"><label>Email:</label> <input type="email" class="form-control" v-model="email" /></div>
+        <div class="form-group"><label>Email:</label> <input type="email" class="form-control" required placeholder="Email" v-model="email" /></div>
         <div class="form-group">
-          <label>Password:</label> <input type="password" class="form-control" v-model="password" />
+          <label>Password:</label> <input type="password" class="form-control" required placeholder="password" v-model="password" />
         </div>
         <input type="submit" class="btn btn-primary" value="Submit" />
       </form>

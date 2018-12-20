@@ -27,18 +27,20 @@
                         <img v-bind:src="outfit.image" alt="Responsive image" />
                     </div>
                     <!-- End Slider -->
-                    <h3 class="bold-subtitle dark sm-mt">
+                <div class="xs-px xs-py xs-px-mobile bg-white bs-sm">
+                    <h1 class="bold-subtitle dark sm-mt t-center">
                         {{ outfit.name }}
-                    </h3>
-                    <p class="xs-mt">
+                    </h1>
+                    <p class="bold-subtitle dark xxs-my t-center">
                         {{ outfit.description }}
                     </p>
+                  </div>
                 </div>
                 <!-- lightbox gallery -->
                 <div class="qdr-col-3 gap-3 lightbox_gallery">
-                    <div v-for="product in outfit.products">
-                        <a v-bind:href="product.product_url" class="thumbnail-img block-img" data-iframe="true">
-                            <img v-bind:src="product.image" alt="">
+                    <div v-for="product in outfit.products" style="height: 400px;">
+                        <a v-bind:href="product.product_url" class="thumbnail-img block-img" data-iframe="true" style="height: 100% !important;">
+                            <img v-bind:src="product.image" alt="" style="height: 100% !important; object-fit: cover">
                             <div class="img-overlay"><div class="overlay-wrap"><i class="fa fa-expand font-20"></i></div></div>
                         </a>
                     </div>
@@ -62,8 +64,12 @@
                       </div>
       </div> -->
       <!-- lightbox gallery end -->
-                  <div class="divider-1 container sm-mt xs-mb">
+      <section id="lists" class=" py">
+                  <div v-for="product in outfit.products" class="list-group">
+                    <a v-bind:href="product.product_url" class="list-group-item"> {{ product.name }}</a>                                           
                   </div>
+
+      </section>
                 <div class="container-sm block-img clearfix bt-1 border-gray2 sm-pt sm-mt">
 
                     <!-- Row for cols -->
@@ -75,7 +81,7 @@
                         </div>
                         <!-- Texts -->
                         <div class="col-11">
-                            <h4 class="bold-subtitle dark">JETTTTTTT</h4>
+                            <h4 class="bold-subtitle dark">JETT</h4>
                             <p class="xxs-my gray7">
                                 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth the master rationally encounter consequences that are extremely painful
                             </p>
@@ -89,6 +95,44 @@
                 </div>
         <div class="divider-1 container sm-mt xs-mb">
           <span class="h3 merriweather italic light colored1">Recommendations</span>
+        </div>
+<section class="py gray7 lh-lg">
+        <!-- Container for Comments -->
+        <div class="container-sm">
+
+            <!-- Title -->
+            <div class="divider-1 container-xs xs-mb">
+                <span class="h3 bold-title dark">There are 1 comments</span>
+            </div>
+            <!-- Row for comments -->
+            <div class="block-img container sm-mt">
+
+                <!-- Comment -->
+                <div v-for="rec in outfit.recommendations"class="row bb-1 border-gray1 xxs-py">
+                    <!-- Comment Img -->
+                    <div class="col-1 no-pm hidden-sm">
+                        <img v-bind:src="rec.image" alt="user avatar" >
+                    </div>
+                    <!-- Texts -->
+                    <div class="col-11">
+                        <h5 class="bold-subtitle dark">
+                            Doug
+                            <span class="font-13 gray5 normal xxs-ml no-ls">
+                                <i class="icon-clock mini-mr"></i>
+                                June 21, 2018 7:32 PM
+                            </span>
+                            <a href="#form" class="f-right badge no-ls bg-gray radius gray7 border-1 border-gray2 bg-gray2-hover">REPLY</a>
+                        </h5>
+                        <p class="xxs-my">
+                            {{ rec.comment }}
+                        </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+                <div class="divider-1 container sm-mt xs-mb">
+          <span class="h3 merriweather italic light colored1"> Post a Recommendation</span>
         </div>
     <section class="py  bg-gray border-1 border-gray2">
 

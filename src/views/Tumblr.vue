@@ -31,7 +31,9 @@
                     <!-- Mark -->
                     <!-- Image -->
                     <div>
+                      <a href="/#/outfits/new">
                         <img v-bind:src="photo.photos[0].original_size.url"  alt="">
+                      </a>
                     </div>
                     <!-- Post Texts -->
                 </a>
